@@ -1,0 +1,92 @@
+@import '../theme.css';
+
+.quickAddWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quickAddBtn {
+  padding: 0.25rem 0.75rem;
+  border: 1px dashed var(--primary);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.quickAddBtn:hover {
+  background: #eff6ff;
+  border-style: solid;
+}
+
+.quickAddForm {
+  animation: slideDown 0.2s ease;
+}
+
+.quickAddInputGroup {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.quickAddInputGroup input {
+  flex: 1;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.quickAddActions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.quickAddSave,
+.quickAddCancel {
+  padding: 0.5rem;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quickAddSave {
+  background: var(--success);
+  color: white;
+}
+
+.quickAddSave:hover {
+  background: #059669;
+}
+
+.quickAddCancel {
+  background: #f3f4f6;
+  color: var(--secondary);
+}
+
+.quickAddCancel:hover {
+  background: #e5e7eb;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

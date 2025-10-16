@@ -1,0 +1,80 @@
+@import '../../theme.css';
+
+.applicationForm {
+  display: grid;
+  gap: 1.25rem;
+  background: var(--white);
+}
+
+.formSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.formSection.single {
+  grid-template-columns: 1fr;
+}
+
+.applicationForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--secondary);
+}
+
+.applicationForm input,
+.applicationForm select,
+.applicationForm textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-family: var(--body-font);
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.applicationForm input[type='text'],
+.applicationForm input[type='url'],
+.applicationForm input[type='date'],
+.applicationForm input[type='number'],
+.applicationForm select {
+  height: 44px;
+}
+
+.applicationForm input:focus,
+.applicationForm select:focus,
+.applicationForm textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.applicationForm textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.formActions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #e5e7eb;
+}
+
+.applicationForm button {
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .formSection {
+    grid-template-columns: 1fr;
+  }
+}

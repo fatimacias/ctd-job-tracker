@@ -1,0 +1,123 @@
+@import '../theme.css';
+
+.statsContainer {
+  background: white;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin: 0 0 1rem 0;
+  font-size: 1.125rem;
+  color: var(--primary);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.statCard {
+  background: #f9fafb;
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Color Variants */
+.secondary {
+  border-color: var(--secondary);
+}
+
+.secondary .statValue {
+  color: var(--secondary);
+}
+
+.secondary .statLabel {
+  color: var(--secondary);
+}
+
+.primary {
+  border-color: var(--primary);
+}
+
+.primary .statValue {
+  color: var(--primary);
+}
+
+.primary .statLabel {
+  color: #1e40af;
+}
+
+.success {
+  border-color: var(--success);
+}
+
+.success .statValue {
+  color: var(--success);
+}
+
+.success .statLabel {
+  color: #15803d;
+}
+
+.danger {
+  border-color: var(--danger);
+}
+
+.danger .statValue {
+  color: var(--danger);
+}
+
+.danger .statLabel {
+  color: #b91c1c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statValue {
+    font-size: 1.5rem;
+  }
+
+  .statLabel {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .statsContainer {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}

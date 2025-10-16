@@ -1,0 +1,454 @@
+@import '../theme.css';
+
+/* Header Section */
+.aboutHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid var(--primary);
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  animation: fadeInScale 0.6s ease-out;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.aboutHeader h1 {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--secondary);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Content */
+.aboutContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.aboutContent section {
+  margin-bottom: 3rem;
+}
+
+.aboutContent h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  border-bottom: 2px solid #eff6ff;
+  padding-bottom: 0.5rem;
+}
+
+/* Icon Box */
+.iconBox {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Intro Section */
+.introSection {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--primary);
+  margin-bottom: 2rem;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--secondary);
+  margin: 0;
+}
+
+/* Features Section */
+.featuresSection {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.featureCard {
+  background: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.featureCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(59, 130, 246, 0.15);
+  border-color: var(--primary);
+}
+
+.featureIcon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.featureCard span:last-child {
+  color: var(--secondary);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Tech Section */
+.techSection {
+  background: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.techBadge {
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.techBadge img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.techBadge:hover {
+  background: var(--primary);
+  color: white;
+  transform: scale(1.05);
+}
+
+.techBadge:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* Privacy Section */
+.privacySection {
+  background: #f0fdf4;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--success);
+}
+
+.privacyText {
+  color: var(--secondary);
+  line-height: 1.7;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Quick Guide Section */
+.quickGuide {
+  background: #eff6ff;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+}
+
+.stepsList {
+  counter-reset: step-counter;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.stepsList li {
+  counter-increment: step-counter;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 0.75rem;
+  background: white;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border-radius: var(--radius);
+  color: var(--secondary);
+  font-size: 0.95rem;
+}
+
+.stepsList li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  background: var(--primary);
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+/* About Project Section */
+.aboutProject {
+  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border-left: 4px solid #a855f7;
+}
+
+.aboutProject p {
+  color: var(--secondary);
+  line-height: 1.7;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.aboutProject a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.aboutProject a:hover {
+  text-decoration: underline;
+}
+
+/* Acknowledgment Section */
+.acknowledgmentSection {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+}
+
+.acknowledgmentContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.acknowledgmentIntro {
+  color: var(--secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px dashed var(--primary);
+}
+
+.acknowledgmentIntro a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.acknowledgmentIntro a:hover {
+  text-decoration: underline;
+  color: #1e40af;
+}
+
+.thanksCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border-left: 3px solid var(--primary);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.thanksCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.thanksCard h3 {
+  color: var(--primary);
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem 0;
+  font-weight: 700;
+}
+
+.thanksCard p {
+  color: var(--secondary);
+  line-height: 1.7;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.acknowledgmentClosing {
+  background: white;
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  text-align: center;
+  color: var(--secondary);
+  line-height: 1.7;
+  margin: 0.5rem 0 0 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 2px solid var(--primary);
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.1);
+}
+
+/* Inspiration Section */
+.inspirationSection {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border-left: 4px solid #f59e0b;
+}
+
+.inspirationText {
+  color: var(--secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.resourcesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.resourceItem {
+  background: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  border-left: 3px solid #f59e0b;
+  color: var(--secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.resourceItem:hover {
+  transform: translateX(4px);
+  box-shadow: 0 3px 8px rgba(245, 158, 11, 0.15);
+}
+
+.resourceItem strong {
+  color: var(--primary);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.resourceItem a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.resourceItem a:hover {
+  text-decoration: underline;
+  color: #f59e0b;
+}
+
+.inspirationNote {
+  color: var(--secondary);
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Compatibility Section */
+.compatibilitySection {
+  text-align: center;
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+}
+
+.compatibilitySection p {
+  color: var(--secondary);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .aboutHeader {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .aboutHeader h1 {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .aboutContent section {
+    margin-bottom: 2rem;
+  }
+
+  .featureGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .stepsList li {
+    padding-left: 2.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutHeader h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .featureCard {
+    flex-direction: column;
+    text-align: center;
+  }
+}

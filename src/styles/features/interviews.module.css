@@ -1,0 +1,313 @@
+@import '../theme.css';
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header h3 {
+  margin: 0;
+}
+
+/* Compact List Design */
+.compactList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.compactCard {
+  display: flex;
+  gap: 1rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+}
+
+.compactCard:hover {
+  background: #f3f4f6;
+  border-color: var(--primary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.compactLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  gap: 0.25rem;
+}
+
+.compactRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.compactInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.compactInfo strong {
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.separator {
+  color: #d1d5db;
+  font-weight: 500;
+}
+
+.badges {
+  display: flex;
+  gap: 0.375rem;
+  flex-wrap: wrap;
+}
+
+/* Interview List (Legacy - for full interview calendar page) */
+.interviewList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.interviewCard {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  padding: 1rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.interviewCard:hover {
+  background: #f3f4f6;
+  border-color: var(--primary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Interview Header */
+.interviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.dateBadge {
+  background: var(--primary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.dateText {
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+  opacity: 0.9;
+}
+
+.time {
+  color: var(--secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.duration {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+/* Interview Details */
+.details {
+  margin-bottom: 0.5rem;
+}
+
+.details h4 {
+  margin: 0 0 0.25rem 0;
+  color: var(--primary);
+  font-size: 1.125rem;
+}
+
+.position {
+  margin: 0 0 0.5rem 0;
+  color: var(--secondary);
+  font-size: 0.875rem;
+}
+
+.typeBadge {
+  display: inline-block;
+  background: #eff6ff;
+  color: var(--primary);
+  padding: 0.125rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.statusOffer {
+  background: #10b981;
+  color: white;
+}
+
+.statusInterview {
+  background: #3b82f6;
+  color: white;
+}
+
+.roundBadge {
+  display: inline-block;
+  background: #f0fdf4;
+  color: var(--success);
+  padding: 0.125rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.locationBadge {
+  display: inline-block;
+  background: #fef3c7;
+  color: #92400e;
+  padding: 0.125rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.url {
+  margin-top: 0.5rem;
+  color: #6b7280;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  background: white;
+  border-radius: var(--radius);
+  border: 1px solid #e5e7eb;
+}
+
+.urlWithMargin {
+  margin-top: 0.25rem;
+}
+
+/* Calendar Page Specific */
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.calendarHeader h1 {
+  margin: 0;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filterBtn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  background: white;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.filterBtn:hover {
+  background: #f9fafb;
+}
+
+.filterBtn.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--secondary);
+}
+
+.emptyState h3 {
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+}
+
+.emptyState p {
+  margin: 0;
+  font-style: italic;
+}
+
+.dashboardLink {
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .compactCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .compactLeft {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    min-width: unset;
+  }
+
+  .compactInfo {
+    font-size: 0.9rem;
+  }
+
+  .badges {
+    font-size: 0.7rem;
+  }
+
+  .interviewHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .calendarHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .filterButtons {
+    width: 100%;
+  }
+
+  .filterBtn {
+    flex: 1;
+    font-size: 0.875rem;
+  }
+}

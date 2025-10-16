@@ -1,0 +1,316 @@
+/**
+ * Icon System - Centralized icon classes using CSS pseudo-elements
+ * Usage: <span className="icon-dashboard"></span>
+ */
+
+/* Base icon class */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  line-height: 1;
+}
+
+.icon::before {
+  font-size: 1.2em;
+}
+
+/* Navigation Icons */
+.icon-dashboard::before {
+  content: '📊';
+}
+
+.icon-calendar::before,
+.icon-interviews::before {
+  content: '📅';
+}
+
+.icon-company::before,
+.icon-companies::before {
+  content: '🏢';
+}
+
+.icon-position::before,
+.icon-positions::before,
+.icon-briefcase::before {
+  content: '💼';
+}
+
+.icon-settings::before,
+.icon-gear::before {
+  content: '⚙️';
+}
+
+.icon-info::before,
+.icon-about::before {
+  content: 'ℹ️';
+}
+
+/* Action Icons */
+.icon-search::before {
+  content: '🔍';
+}
+
+.icon-edit::before,
+.icon-pencil::before {
+  content: '✏️';
+}
+
+.icon-delete::before,
+.icon-trash::before {
+  content: '🗑️';
+}
+
+.icon-add::before,
+.icon-plus::before {
+  content: '➕';
+}
+
+.icon-close::before,
+.icon-x::before {
+  content: '✕';
+}
+
+.icon-check::before,
+.icon-checkmark::before {
+  content: '✓';
+}
+
+/* Status Icons */
+.icon-success::before {
+  content: '✅';
+}
+
+.icon-error::before {
+  content: '❌';
+}
+
+.icon-warning::before {
+  content: '⚠️';
+}
+
+.icon-pending::before {
+  content: '🕐';
+}
+
+/* Application Status Icons */
+.icon-applied::before {
+  content: '📝';
+}
+
+.icon-interview::before {
+  content: '🎯';
+}
+
+.icon-offer::before {
+  content: '🎉';
+}
+
+.icon-rejected::before {
+  content: '❌';
+}
+
+/* Feature Icons */
+.icon-note::before,
+.icon-notes::before {
+  content: '📝';
+}
+
+.icon-phone::before {
+  content: '📞';
+}
+
+.icon-email::before {
+  content: '📧';
+}
+
+.icon-location::before,
+.icon-map::before {
+  content: '📍';
+}
+
+.icon-link::before,
+.icon-url::before {
+  content: '🔗';
+}
+
+.icon-money::before,
+.icon-salary::before {
+  content: '💰';
+}
+
+.icon-clock::before,
+.icon-time::before {
+  content: '🕐';
+}
+
+.icon-user::before,
+.icon-person::before {
+  content: '👤';
+}
+
+.icon-star::before {
+  content: '⭐';
+}
+
+.icon-heart::before {
+  content: '❤️';
+}
+
+/* Storage Icons */
+.icon-save::before,
+.icon-database::before {
+  content: '💾';
+}
+
+.icon-cloud::before {
+  content: '☁️';
+}
+
+/* Communication Icons */
+.icon-chat::before,
+.icon-message::before {
+  content: '💬';
+}
+
+.icon-notification::before,
+.icon-bell::before {
+  content: '🔔';
+}
+
+/* Utility Icons */
+.icon-home::before {
+  content: '🏠';
+}
+
+.icon-document::before,
+.icon-file::before {
+  content: '📄';
+}
+
+.icon-folder::before {
+  content: '📁';
+}
+
+.icon-download::before {
+  content: '⬇️';
+}
+
+.icon-upload::before {
+  content: '⬆️';
+}
+
+.icon-filter::before {
+  content: '🔽';
+}
+
+.icon-sort::before {
+  content: '⇅';
+}
+
+/* Emotion Icons */
+.icon-heart::before {
+  content: '❤️';
+}
+
+.icon-thanks::before,
+.icon-pray::before {
+  content: '🙏';
+}
+
+.icon-rocket::before {
+  content: '🚀';
+}
+
+.icon-sparkles::before {
+  content: '✨';
+}
+
+.icon-lock::before {
+  content: '🔒';
+}
+
+.icon-globe::before,
+.icon-world::before {
+  content: '🌐';
+}
+
+.icon-lightbulb::before,
+.icon-idea::before {
+  content: '💡';
+}
+
+.icon-mobile::before {
+  content: '📱';
+}
+
+/* Tech Stack Icons */
+.icon-react::before {
+  content: '⚛️';
+}
+
+.icon-compass::before,
+.icon-router::before {
+  content: '🧭';
+}
+
+.icon-palette::before,
+.icon-art::before {
+  content: '🎨';
+}
+
+.icon-ruler::before,
+.icon-code::before {
+  content: '📐';
+}
+
+/* Additional Utility Icons */
+.icon-mailbox::before,
+.icon-empty::before {
+  content: '📭';
+}
+
+.icon-import::before,
+.icon-inbox::before {
+  content: '📥';
+}
+
+.icon-export::before,
+.icon-outbox::before {
+  content: '📤';
+}
+
+.icon-merge::before,
+.icon-shuffle::before {
+  content: '🔀';
+}
+
+.icon-people::before,
+.icon-group::before {
+  content: '👥';
+}
+
+/* Size modifiers */
+.icon-sm::before {
+  font-size: 0.875em;
+}
+
+.icon-lg::before {
+  font-size: 1.5em;
+}
+
+.icon-xl::before {
+  font-size: 2em;
+}
+
+/* No emoji variant (for accessibility or preference) */
+.icon-no-emoji::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}

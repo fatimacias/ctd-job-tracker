@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle for better visibility -->
+  <circle cx="50" cy="50" r="48" fill="#EFF6FF"/>
+
+  <!-- Briefcase base -->
+  <rect x="15" y="35" width="70" height="50" rx="6" fill="#3b82f6" stroke="#3b82f6" stroke-width="2"/>
+
+  <!-- Briefcase handle -->
+  <path d="M 35 35 L 35 25 Q 35 20 40 20 L 60 20 Q 65 20 65 25 L 65 35" stroke="#3b82f6" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Briefcase lock/clasp -->
+  <rect x="45" y="50" width="10" height="8" rx="2" fill="#60a5fa"/>
+
+  <!-- Checkmark overlay -->
+  <path d="M 30 60 L 42 72 L 70 44" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Accent lines -->
+  <line x1="25" y1="42" x2="45" y2="42" stroke="#60a5fa" stroke-width="2"/>
+  <line x1="55" y1="42" x2="75" y2="42" stroke="#60a5fa" stroke-width="2"/>
+</svg>

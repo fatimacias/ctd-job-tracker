@@ -1,0 +1,18 @@
+@import '../theme.css';
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.errorAlert {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+.emptyStateButton {
+  margin-top: 1rem;
+}
